@@ -1,0 +1,85 @@
+.paggination {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.editor {
+    &__item {
+        margin-bottom: 12px;
+        &__title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        &__input {
+            & input, textarea {
+                width: 411px;
+                border-radius: 5px;
+                border-color: rgba(0, 195, 183, 0.3);
+                padding: 10px 15px;
+                outline: none;
+                &:focus {
+                    border-color: rgba(0, 195, 183, 1);
+                }
+            }
+        }
+        &__select {
+            border-radius: 5px;
+            border: 1px solid rgb(0, 195, 183);
+            padding: 5px 15px;
+            // margin: 0 15px;
+        }
+    }
+    &__button {
+        background: rgb(0, 195, 183);
+        padding: 5px 15px;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        border: 1px solid rgb(0, 195, 183);
+        cursor: pointer;
+        &:hover {
+            color: rgb(0, 195, 183);
+            border-color: rgb(0, 195, 183);
+            background: #fff;
+        }
+    }
+    &__error {
+        color: red;
+    }
+    &__input__error {
+        & input, textarea {
+            border-color: red;
+        }
+    }
+    &__checkWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__checkTitle {
+        display: flex;
+        align-items: center;
+        &__link {
+            margin-left: 6px;
+            color: rgb(0, 195, 183);
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__check {
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgb(0, 195, 183);
+        cursor: pointer;
+        margin-right: 12px;
+        &__active {
+            background-color: rgb(0, 195, 183);
+        }
+    }
+}
+.special-label {
+    display: none !important;
+}
